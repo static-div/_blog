@@ -1,1 +1,9 @@
-<p> helo</p>
+<h3> Blog posts </h3>
+<ul>
+{% for post in object_list %}
+    <li>{{ post.title}}
+    {{ post.author}}</br>
+    {{ post.body }}</li>
+</br></br>
+{% endfor %}
+</ul>

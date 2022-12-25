@@ -1,4 +1,6 @@
 <h3> Blog posts </h3>
+<h5><a href="{% url 'post_Create' %}">Add Post</a></h5>
+
 <ul>
 {% for post in object_list %}
     <li><a href="{% url 'post_Detail' post.pk %}">{{ post.title}}</a>
